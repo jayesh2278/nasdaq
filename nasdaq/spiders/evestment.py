@@ -36,11 +36,11 @@ class EvestmentSpider(scrapy.Spider):
             # driver.switch_to.window(driver.window_handles[1])
             username_input = driver.find_element(By.XPATH,'.//input[@placeholder="username/email"]')
             username_input.click()
-            username_input.send_keys('lisa.hochhauser@blackrock.com')
+            username_input.send_keys('User Name')
 
             user_password = driver.find_element(By.XPATH,'.//input[@placeholder="your password"]')
             user_password.click()
-            user_password.send_keys('Infra2020')
+            user_password.send_keys('Password')
 
             driver.find_element(By.XPATH,'.//button[@aria-label="Log In"]').click()
 
